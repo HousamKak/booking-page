@@ -1,70 +1,73 @@
-# Getting Started with Create React App
+# London Onboarding Service Booking
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Overview
 
-## Available Scripts
+This project is a web-based application that allows users to book onboarding services when arriving in London. The application offers three exclusive packages — Silver, Gold, and Platinum — designed to enhance the travel experience by providing services such as airport meet and greet, transportation, mobile SIM cards, and more. Users can select a package and book a service through an integrated Calendly widget.
 
-In the project directory, you can run:
+## Features
 
-### `npm start`
+- **Package Selection**: Users can choose from three distinct packages: Silver, Gold, and Platinum.
+  - **Silver Package**: Virtual support and route planning.
+  - **Gold Package**: Airport meet and greet, public transport pickup, SIM card, Oyster card, and UK bank account support.
+  - **Platinum Package**: Chauffeured pickup, SIM card, Oyster card, and UK bank account support.
+- **Additional Benefits**: All packages include a curated list of London attractions, WhatsApp support, and currency exchange services.
+- **Seamless Booking**: Integrated with Calendly, allowing users to book their services directly from the application.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Project Structure
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- **`src/Components/Booking.jsx`**: The main component handling the package selection and booking process.
+- **`src/Components/CalendlyWidget.jsx`**: A dedicated component for rendering the Calendly widget.
+- **`src/Components/Packages/Packages.jsx`**: The component displaying the available packages.
+- **`src/Components/Packages/Packages.css`**: Styles for the package display.
+- **`src/Components/Booking.css`**: Styles for the overall booking layout and Calendly widget.
 
-### `npm test`
+## Setup and Installation
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+To set up the project locally, follow these steps:
 
-### `npm run build`
+1. **Clone the Repository**:
+   ```bash
+   git clone https://github.com/yourusername/london-onboarding-service.git
+   cd london-onboarding-service
+   ```
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+2. **Install Dependencies**:
+   Ensure you have Node.js installed. Then, install the required dependencies:
+   ```bash
+   npm install
+   ```
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+3. **Run the Application**:
+   Start the development server:
+   ```bash
+   npm start
+   ```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+   The application should now be running at `http://localhost:3000`.
 
-### `npm run eject`
+4. **Build for Production**:
+   To create a production-ready build:
+   ```bash
+   npm run build
+   ```
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## Usage
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+1. **Choose a Package**:
+   - Navigate to the homepage, where the Silver, Gold, and Platinum packages are displayed.
+   - Each package provides details about the services included.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+2. **Book a Service**:
+   - Click the "Book Now" button under the desired package.
+   - The Calendly widget will appear, allowing you to select an available time slot and book the service.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+3. **Additional Services**:
+   - Each package comes with additional benefits like a list of top attractions in London and WhatsApp support for up to one month.
 
-## Learn More
+## Contributing
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+Contributions are welcome! If you have any ideas or improvements, please submit a pull request or open an issue.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## License
 
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.

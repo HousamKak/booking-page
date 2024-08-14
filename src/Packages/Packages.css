@@ -1,0 +1,53 @@
+.packages-container {
+    margin: 20px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.packages-grid {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.package-card {
+    width: 30%;
+    margin-bottom: 20px;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.package-card h3 {
+    margin-top: 0;
+    color: #333;
+}
+
+.package-card p, .package-card ul {
+    margin: 10px 0;
+    color: #555;
+}
+
+.package-card ul {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+.additional-benefits {
+    margin-top: 40px;
+    padding: 20px;
+    background-color: #eee;
+    border-radius: 8px;
+}
+
+.additional-benefits h4 {
+    margin-top: 0;
+    color: #444;
+}
+
+.p-button-outlined {
+    margin-top: 20px;
+    width: 100%;
+}
