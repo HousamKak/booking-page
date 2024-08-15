@@ -1,106 +1,58 @@
 .packages-container {
-    margin: 20px;
-    padding: 20px;
-    background-color: #f5f5f5;
-    border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin: 20px;
+  padding: 20px;
+  background-color: #f5f5f5;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Title section */
+.packages-title {
+  text-align: center;
+  margin-bottom: 5%;
+}
+
+/* Cards section */
+.packages-cards {
+  margin-bottom: 40px;
+  display: flex;
+  justify-content: center;
 }
 
 .packages-grid {
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
+  display: flex;
+  width: 95%;
+  gap: 20px;
+  justify-content: space-around;
 }
 
-.package-card {
-    width: 30%;
-    margin-bottom: 20px;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-}
-
-.package-card h3 {
-    margin-top: 0;
-    color: #333;
-}
-
-.package-card p, .package-card ul {
-    margin: 10px 0;
-    color: #555;
-}
-
-.package-card ul {
-    list-style-type: disc;
-    padding-left: 20px;
-}
-
-/* Silver Package */
-.package-card.silver {
-    background-color: #f0f0f0;
-}
-
-.silver .p-button-outlined {
-    background-color: #b0b0b0;
-    border-color: #b0b0b0;
-    color: #fff;
-}
-
-/* Gold Package */
-.package-card.gold {
-    background-color: #ffd700;
-}
-
-.gold .p-button-outlined {
-    background-color: #daa520;
-    border-color: #daa520;
-    color: #fff;
-}
-
-/* Platinum Package */
-.package-card.platinum {
-    background-color: #e5e4e2;
-}
-
-.platinum .p-button-outlined {
-    background-color: #4682b4;
-    border-color: #4682b4;
-    color: #fff;
-}
-
-.additional-benefits {
-    margin-top: 40px;
-    padding: 20px;
-    background-color: #eee;
-    border-radius: 8px;
+/* Additional benefits section */
+.packages-additional-benefits {
+  margin-top: 40px;
+  padding: 20px;
+  background-color: #eee;
+  border-radius: 8px;
 }
 
 .additional-benefits h4 {
-    margin-top: 0;
-    color: #444;
+  margin-top: 0;
+  color: #444;
 }
 
 .p-button-outlined {
-    margin-top: 20px;
-    width: 100%;
-}
-
-/* Ensure buttons are aligned at the bottom */
-.package-card .p-button-outlined {
-    align-self: flex-end;
+  margin-top: 20px;
+  width: 100%;
 }
 
 /* Media Query for Mobile Devices */
 @media (max-width: 768px) {
-    .packages-grid {
-        flex-direction: column;
-        align-items: center;
-    }
+  .packages-grid {
+    flex-direction: column;
+    align-items: center;
+  }
 
-    .package-card {
-        width: 80%; /* Adjust width for mobile */
-    }
+  .package-card {
+    width: 100%; /* Adjust width for mobile */
+    margin-bottom: 20px;
+  }
 }
