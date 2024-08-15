@@ -1,16 +1,17 @@
-import './App.css';
-import Booking from './Components/Booking'
-import 'primereact/resources/themes/saga-blue/theme.css';  // Or another theme
-import 'primereact/resources/primereact.min.css';
-import 'primeicons/primeicons.css';
-
+import React from 'react';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import Booking from './Components/Booking';
+import CalendlyPage from './Components/CalendlyPage';
 
 function App() {
-  return (
-    <div className="App">
-      <Booking/>
-    </div>
-  );
+    return (
+        <Router>
+            <Routes>
+                <Route path="/" element={<Booking />} />
+                <Route path="/calendly/:packageType" element={<CalendlyPage />} />
+            </Routes>
+        </Router>
+    );
 }
 
 export default App;

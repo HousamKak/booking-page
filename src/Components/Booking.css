@@ -1,11 +1,6 @@
 .container {
     display: flex;
-    max-width: 1000px;
-    margin: auto;
-}
-
-.form-container {
-    width: 50%;
+   
 }
 
 .calendly-container {
@@ -23,4 +18,215 @@
     right: 0;
     opacity: 1;
     background-color: #fff; /* Active color */
+}
+/* Overall container styling */
+
+/* Section styling */
+.introduction-section, 
+.transportation-section, 
+.accommodation-section, 
+.attractions-section, 
+.practical-info-section {
+    margin: 20px 0;
+    padding: 20px;
+    background: linear-gradient(135deg, #f0f0f0, #d9d9d9);
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.introduction-section:hover, 
+.transportation-section:hover, 
+.accommodation-section:hover, 
+.attractions-section:hover, 
+.practical-info-section:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Section title styling */
+.introduction-section h2,
+.transportation-section h3,
+.accommodation-section h3,
+.attractions-section h3,
+.practical-info-section h3 {
+    color: #222;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+}
+
+/* Adding icons before titles */
+.introduction-section h2::before,
+.transportation-section h3::before,
+.accommodation-section h3::before,
+.attractions-section h3::before,
+.practical-info-section h3::before {
+    content: '';
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+/* Paragraph styling */
+.introduction-section p,
+.transportation-section p,
+.accommodation-section p,
+.attractions-section p,
+.practical-info-section p {
+    color: #555;
+    line-height: 1.6;
+    font-family: 'Open Sans', sans-serif;
+}
+
+/* List styling */
+.transportation-section ul,
+.accommodation-section ul,
+.attractions-section ul,
+.practical-info-section ul {
+    list-style: none;
+    padding: 0;
+    font-family: 'Open Sans', sans-serif;
+    color: #444;
+}
+
+.transportation-section ul li,
+.accommodation-section ul li,
+.attractions-section ul li,
+.practical-info-section ul li {
+    margin-bottom: 12px;
+    display: flex;
+    align-items: center;
+}
+
+.transportation-section ul li strong,
+.accommodation-section ul li strong,
+.attractions-section ul li strong,
+.practical-info-section ul li strong {
+    font-weight: 600;
+    color: #333;
+}
+
+/* Icons for list items */
+.transportation-section ul li::before,
+.accommodation-section ul li::before,
+.attractions-section ul li::before,
+.practical-info-section ul li::before {
+    content: '✔'; /* You can replace this with an icon if desired */
+    margin-right: 8px;
+    color: #888;
+}
+
+.hero-section {
+    width: 100%;
+    height: 100vh; /* Adjust height as necessary */
+    background-image: url('./london.jpg'); /* If not using import */
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero-overlay {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+.hero-overlay h1 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.hero-overlay p {
+    font-size: 1.5rem;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.packages-additional-benefits {
+    margin-top: 40px;
+    padding: 20px;
+    background-color: inherit; /* Match the background color of the container */
+    border-radius: 0; /* Remove rounded corners */
+    box-shadow: none; /* Remove any shadow */
+}
+
+.packages-additional-benefits h4 {
+    margin-top: 0;
+    color: #333;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.8rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.benefits-list {
+    list-style-type: none; /* Remove bullet points */
+    padding: 0;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.2rem;
+    color: #555;
+}
+
+.benefits-list li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+    padding: 10px 0;
+}
+
+.benefits-list li i {
+    font-size: 1.5rem;
+    color: #ff6f61; /* Color for the icons */
+    margin-right: 15px;
+}
+
+.benefits-list li a {
+    text-decoration: none; /* Ensure no underline for any links inside the list */
+    color: inherit; /* Inherit the text color */
+}
+
+.benefits-list li:last-child {
+    border-bottom: none; /* Remove border for the last item */
+}
+
+
+.packages-additional-benefits p {
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.1rem;
+    color: #666;
+    margin-top: 20px;
+}
+
+
+
+
+/* Ensure responsive behavior */
+@media (max-width: 768px) {
+    .hero-section {
+        height: 250px;
+    }
+
+    .hero-overlay h1 {
+        font-size: 2rem;
+    }
+
+    .hero-overlay p {
+        font-size: 1rem;
+    }
 }
