@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/booking-page/static/css/main.69f4efbb.css",
+    "main.css": "/booking-page/static/css/main.fd6d414b.css",
     "main.js": "/booking-page/static/js/main.a017c2c0.js",
     "static/js/453.cb98b375.chunk.js": "/booking-page/static/js/453.cb98b375.chunk.js",
     "static/media/london.jpg": "/booking-page/static/media/london.aace96d5681400fa6ec5.jpg",
     "index.html": "/booking-page/index.html",
-    "main.69f4efbb.css.map": "/booking-page/static/css/main.69f4efbb.css.map",
+    "main.fd6d414b.css.map": "/booking-page/static/css/main.fd6d414b.css.map",
     "main.a017c2c0.js.map": "/booking-page/static/js/main.a017c2c0.js.map",
     "453.cb98b375.chunk.js.map": "/booking-page/static/js/453.cb98b375.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.69f4efbb.css",
+    "static/css/main.fd6d414b.css",
     "static/js/main.a017c2c0.js"
   ]
 }
