@@ -7,7 +7,7 @@ function App() {
     return (
         <Router>
             <Routes>
-                <Route path="/" element={<Booking />} />
+                <Route path="/booking-page" element={<Booking />} />
                 <Route path="/calendly/:packageType" element={<CalendlyPage />} />
             </Routes>
         </Router>
