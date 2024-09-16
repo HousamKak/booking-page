@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import Packages from '../Packages/Packages';
 import CalendlyWidget from './CalendlyWidget';
 import './Booking.css';
+import batoulIm from '../media/batoul_2.jpg'; // Importing the image
 import batoulImage from '../media/batoul.jpg'; // Importing the image
 import azeemImage from '../media/azeem.jpg';  // Importing the image
 
@@ -20,7 +21,7 @@ const Booking = () => {
             <section className="hero-section">
                 <div className="hero-overlay">
                     <h1>LONDON ONBOARDING</h1>
-                    <p>To be the go-to support network for students in London, making every aspect of their journey—from landing to living—simple, stress-free, and welcoming.</p>
+                    <p>Your go-to-support network for new students in London, making every aspect of your journey -from landing to living- simple, stress-free, and welcoming</p>
                 </div>
             </section>
 
@@ -35,6 +36,16 @@ const Booking = () => {
                     />
                 </div>
             )}
+
+            {/* Quote Section */}
+            <section className="quote-section">
+                <div className="quote-container">
+                    <img src={batoulIm} alt="Batoul Noureddine" className="quote-image" />
+                    <div className="quote-text">
+                        <p>“Our mission is to empower students in London by creating a supportive community that eases their transition into city life. We are committed to providing personalized guidance and fostering connections that help students thrive academically, socially, and personally. By simplifying the everyday challenges of living in a new city, we enable students to focus on their growth and success, making their London experience as fulfilling and enriching as possible.”</p>
+                    </div>
+                </div>
+            </section>
 
             {/* Our Team Section */}
             <section className="team-section">

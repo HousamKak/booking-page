@@ -281,6 +281,65 @@
     margin-bottom: 8px;
 }
 
+/* Quote Section */
+.quote-section {
+    background-color: #f9f9f9;
+    padding: 40px 20px;
+    margin-bottom: 40px; /* Add space below the quote section */
+}
+
+.quote-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.quote-image {
+    width: 40%;
+    height: auto;
+    border-radius: 10px;
+    margin-right: 20px;
+    object-fit: cover;
+}
+
+/* Quoted text styling */
+.quote-text {
+    width: 60%;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.2rem;
+    line-height: 1.8;
+    color: #555;
+    position: relative;
+    text-align: left;
+    padding: 20px;
+    background-color: #f0f0f0; /* Light background to emphasize the quote */
+    border-left: 5px solid #ff6f67; /* Colored left border for quote effect */
+    border-radius: 10px;
+}
+/* Adding large quotation marks */
+.quote-text::before {
+    content: '“'; /* Opening large quotation mark */
+    font-family: 'Georgia', serif;
+    font-size: 4rem;
+    color: #ff6f61;
+    position: absolute;
+    top: -20px;
+    left: -5px;
+}
+
+.quote-text::after {
+    content: '”'; /* Closing large quotation mark */
+    font-family: 'Georgia', serif;
+    font-size: 4rem;
+    color: #ff6f61;
+    position: absolute;
+    bottom: -20px;
+    right: -20px;
+}
+
+
 
 
 /* Ensure responsive behavior */
@@ -319,5 +378,25 @@
 
     .team-member-info {
         width: 100%;
+    }
+    .quote-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .quote-image {
+        width: 100%;
+        margin: 0 0 20px 0;
+    }
+
+    .quote-text {
+        width: 100%;
+        padding: 20px;
+    }
+
+    .quote-text::before, .quote-text::after {
+        font-size: 3rem; /* Slightly smaller quotation marks on mobile */
+
+        bottom: -15px;
     }
 }

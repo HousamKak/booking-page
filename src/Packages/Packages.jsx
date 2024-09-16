@@ -64,13 +64,10 @@ const Packages = ({ onBook }) => {
 
                     <div className="benefits-list">
                         <Typography level="body-md" component="p">
-                            A curated list of London’s top parks and must-visit attractions.
+                         Join a WhatsApp group with the team and other incoming students, to receive support for all questions and meet new like-minded students
                         </Typography>
                         <Typography level="body-md" component="p">
-                            A hotline WhatsApp service available for support up to one month after purchase.
-                        </Typography>
-                        <Typography level="body-md" component="p">
-                            Currency exchange service from any currency to GBP (must order 48 hours before arrival).
+                            Currency exchange service from any currency to GBP (must order 48 hours before arrival)
                         </Typography>
                     </div>
                 </Card>
