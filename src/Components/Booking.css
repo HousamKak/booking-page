@@ -534,8 +534,7 @@
 
     .quote-text::before, .quote-text::after {
         font-size: 3rem; /* Slightly smaller quotation marks on mobile */
-
-        bottom: -15px;
+        right: 2px;
     }
     .footer-content {
         flex-direction: column;
