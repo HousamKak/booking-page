@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import Packages from '../Packages/Packages';
 import CalendlyWidget from './CalendlyWidget';
 import './Booking.css';
@@ -15,18 +15,24 @@ const Booking = () => {
         setCalendlyActive(true);
     };
 
+    const scrollToPackages = () => {
+        document.getElementById('packages-section').scrollIntoView({ behavior: 'smooth' });
+    };
+
     return (
         <div className="booking-container">
             {/* Hero Section */}
             <section className="hero-section">
                 <div className="hero-overlay">
                     <h1>LONDON ONBOARDING</h1>
-                    <p>Your go-to-support network for new students in London, making every aspect of your journey -from landing to living- simple, stress-free, and welcoming</p>
+                    <p>Your go-to-support network for new students in London, making every aspect of your journey -from landing to living- simple, stress-free, and welcoming</p>
                 </div>
             </section>
 
             {/* Packages Section */}
-            <Packages onBook={handleBook} />
+            <section id="packages-section">
+                <Packages onBook={handleBook} />
+            </section>
 
             {calendlyActive && (
                 <div className="calendly-section">
@@ -36,16 +42,6 @@ const Booking = () => {
                     />
                 </div>
             )}
-
-            {/* Quote Section */}
-            <section className="quote-section">
-                <div className="quote-container">
-                    <img src={batoulIm} alt="Batoul Noureddine" className="quote-image" />
-                    <div className="quote-text">
-                        <p>“Our mission is to empower students in London by creating a supportive community that eases their transition into city life. We are committed to providing personalized guidance and fostering connections that help students thrive academically, socially, and personally. By simplifying the everyday challenges of living in a new city, we enable students to focus on their growth and success, making their London experience as fulfilling and enriching as possible.”</p>
-                    </div>
-                </div>
-            </section>
 
             {/* Our Team Section */}
             <section className="team-section">
@@ -81,6 +77,34 @@ const Booking = () => {
                     </div>
                 </div>
             </section>
+
+               {/* Quote Section */}
+               <section className="quote-section">
+                <div className="quote-container">
+                    <img src={batoulIm} alt="Batoul Noureddine" className="quote-image" />
+                    <div className="quote-text">
+                        <p>“Our mission is to empower students in London by creating a supportive community that eases their transition into city life. We are committed to providing personalized guidance and fostering connections that help students thrive academically, socially, and personally. By simplifying the everyday challenges of living in a new city, we enable students to focus on their growth and success, making their London experience as fulfilling and enriching as possible.”</p>
+                    </div>
+                </div>
+            </section>
+
+
+            {/* Catchy Phrase and Book Now Button Section */}
+            <section className="book-now-section">
+                <div className="catchy-phrase">
+                    <h2>Make Your London a Swift Transition</h2>
+                </div>
+                <button className="book-now-btn" onClick={scrollToPackages}>Book Us Now</button>
+            </section>
+
+            {/* Footer Section */}
+            <footer className="footer">
+                <div className="footer-content">
+                    <p className="footer-rights">© 2024 All Rights Reserved</p>
+                    <p className="footer-phone">📞 +447704636626</p>
+                    <p className="footer-team">The London Onboarding Team</p>
+                </div>
+            </footer>
         </div>
     );
 };

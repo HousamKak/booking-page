@@ -252,7 +252,7 @@
     flex: 1;
     min-width: 280px; /* Adjust minimum width */
     max-width: 45%; /* Shrink the card size a bit */
-    background-color: #f9f9f9;
+    background-color: #f5f5f5;
     padding: 10px; /* Add padding inside the card */
 }
 
@@ -285,7 +285,6 @@
 .quote-section {
     background-color: #f9f9f9;
     padding: 40px 20px;
-    margin-bottom: 40px; /* Add space below the quote section */
 }
 
 .quote-container {
@@ -339,8 +338,74 @@
     right: -20px;
 }
 
+/* Book Now Section */
+.book-now-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px 0;
+    height: 40vh;
+    background-color: #f0f0f0; /* Add background color for better contrast */
+}
+
+.catchy-phrase h2 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 3rem; /* Increase font size */
+    font-weight: bold; /* Make it bold for emphasis */
+    text-align: center;
+    margin-bottom: 30px; /* Add some margin to the bottom */
+    color: #333;
+    text-transform: uppercase; /* Make the text uppercase for a more catchy look */
+    letter-spacing: 2px; /* Add letter spacing for better readability */
+}
+
+.book-now-btn {
+    background-color: #ff6f61;
+    color: #fff;
+    padding: 20px 40px; /* Increase padding to make the button larger */
+    font-size: 1.5rem; /* Increase font size */
+    border: none;
+    border-radius: 8px; /* Slightly larger border radius */
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Add a shadow for emphasis */
+}
+
+.book-now-btn:hover {
+    background-color: #ff4a3a;
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.2); /* Increase shadow on hover */
+}
 
 
+/* Footer Section */
+.footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+    /* margin-top: 40px; */
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.footer-rights {
+    font-size: 1rem;
+}
+
+.footer-phone {
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.footer-team {
+    font-size: 1rem;
+}
 
 /* Ensure responsive behavior */
 @media (max-width: 768px) {
@@ -398,5 +463,19 @@
         font-size: 3rem; /* Slightly smaller quotation marks on mobile */
 
         bottom: -15px;
+    }
+    .footer-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .footer-phone,
+    .footer-rights,
+    .footer-team {
+        margin-bottom: 10px;
+    }
+
+    .book-now-btn {
+        margin-bottom: 20px;
     }
 }
