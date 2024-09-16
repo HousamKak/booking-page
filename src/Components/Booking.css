@@ -19,6 +19,16 @@
     opacity: 1;
     background-color: #fff; /* Active color */
 }
+
+.hero-overlay p {
+    text-align: center; /* Center the text */
+    max-width: 1000px; /* Adjust this value to ensure the text breaks into two lines */
+    margin: 0 auto; 
+    line-height: 1.6; /* For improved readability */
+    color: white; /* Adjust color to ensure it remains visible against the background */
+    font-family: 'Open Sans', sans-serif;
+}
+
 /* Overall container styling */
 
 /* Section styling */
@@ -123,8 +133,8 @@
 
 .hero-section {
     width: 100%;
-    height: 100vh; /* Adjust height as necessary */
-    background-image: url('./london.jpg'); /* If not using import */
+    height: 100vh; 
+    background-image: url('../media/london.jpg'); /* If not using import */
     background-size: cover;
     background-position: center;
     position: relative;
@@ -134,6 +144,7 @@
 }
 
 .hero-overlay {
+    background: rgba(0, 0, 0, 0.5); /* Black overlay with 50% opacity */
     width: 100%;
     height: 100%;
     display: flex;
@@ -142,7 +153,6 @@
     justify-content: center;
     color: white;
     text-align: center;
-    padding: 20px;
 }
 
 .hero-overlay h1 {
@@ -213,6 +223,63 @@
     margin-top: 20px;
 }
 
+/* Team Section */
+.team-section {
+    padding: 20px 10px; /* Reduce padding for a more compact section */
+    border-radius: 10px;
+}
+
+.team-section h2 {
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.8rem; /* Slightly smaller font size for the title */
+    margin-bottom: 40px;
+}
+
+.team-container {
+    display: flex;
+    justify-content: space-around;
+    gap: 20px; /* Add some space between the cards */
+    flex-wrap: wrap; /* Allow cards to wrap to the next line */
+}
+
+.team-member-card {
+    display: flex;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5); /* Softer shadow */
+    overflow: hidden;
+    flex: 1;
+    min-width: 280px; /* Adjust minimum width */
+    max-width: 45%; /* Shrink the card size a bit */
+    background-color: #f9f9f9;
+    padding: 10px; /* Add padding inside the card */
+}
+
+.team-image {
+    width: 50%; /* Reduce the image width */
+    height: auto;
+    object-fit: cover;
+    border-radius: 8px 0 0 8px; /* Rounded corners on the left side */
+}
+
+.team-member-info {
+    padding: 20px; /* Reduce padding */
+    width: 60%; /* Adjust to match the smaller image */
+}
+
+.team-member-info h3 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.3rem; /* Slightly smaller font size for names */
+    margin-bottom: 10px;
+}
+
+.team-member-info p {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 0.9rem; /* Smaller font size for details */
+    line-height: 1.4;
+    margin-bottom: 8px;
+}
 
 
 
@@ -228,5 +295,29 @@
 
     .hero-overlay p {
         font-size: 1rem;
+    }
+    .team-container {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .team-member-info {
+        width: 100%;
+        max-width: 95%;
+    }
+
+    .team-member-card {
+        max-width: 100%;
+        flex-direction: column;
+        padding: 10px; /* Add padding to prevent text from touching the edges */
+    }
+
+    .team-image {
+        width: 100%;
+        height: 180px; /* Set a smaller height for mobile */
+    }
+
+    .team-member-info {
+        width: 100%;
     }
 }

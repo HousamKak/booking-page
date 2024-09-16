@@ -1,5 +1,6 @@
 .packages-container {
   background-color: #f5f5f5;
+  padding: 20px 0; 
 }
 
 /* Title section */
@@ -7,38 +8,42 @@
   text-align: center;
   margin-bottom: 2%;
   padding-top:2%;
+  
 }
 
 /* Cards section */
 .packages-cards {
-  margin-bottom: 40px;
+  margin-bottom: 5%;
   display: flex;
   justify-content: center;
 }
 
 .packages-grid {
   display: flex;
-  width: 95%;
-  gap: 20px;
+  width: 80%;
+  gap: 30px;
   justify-content: space-around;
+  
+}
+.benefits-list {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1.2rem;
+  color: #555;
 }
 
-/* Additional benefits section */
-.packages-additional-benefits {
-  margin-top: 40px;
-  padding: 20px;
-  background-color: #eee;
-  border-radius: 8px;
+.benefits-list p {
+  margin-bottom: 15px; /* Spacing between paragraphs */
+  line-height: 1.6; /* Improve readability */
 }
 
-.additional-benefits h4 {
-  margin-top: 0;
-  color: #444;
+.layer{
+display: flex;
+justify-content: center;
 }
 
-.p-button-outlined {
-  margin-top: 20px;
-  width: 100%;
+.layer_2{
+  width: 78%;
+ 
 }
 
 /* Media Query for Mobile Devices */
@@ -51,5 +56,8 @@
   .package-card {
     width: 100%; /* Adjust width for mobile */
     margin-bottom: 20px;
+  }
+  .layer_2{
+    width: 80%;
   }
 }

@@ -31,6 +31,7 @@ export default function PricingCard({ title, chipLabel, content, price, buttonLa
                     transform: 'scale(1.02)',
                     boxShadow: '0 4px 8px rgba(0, 0, 0, 0.2)',
                 },
+                height: '100%',
             }}
         >
             <Chip size="sm" variant="outlined" color={chipColor || 'neutral'}>

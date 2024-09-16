@@ -1,7 +1,9 @@
-import React, { useState,useEffect } from 'react';
+import React, { useState, useEffect } from 'react';
 import Packages from '../Packages/Packages';
 import CalendlyWidget from './CalendlyWidget';
 import './Booking.css';
+import batoulImage from '../media/batoul.jpg'; // Importing the image
+import azeemImage from '../media/azeem.jpg';  // Importing the image
 
 const Booking = () => {
     const [packageSelected, setPackageSelected] = useState(null);
@@ -11,17 +13,16 @@ const Booking = () => {
         setPackageSelected(selectedPackage);
         setCalendlyActive(true);
     };
-    // Effect to handle scroll
+
     return (
         <div className="booking-container">
             {/* Hero Section */}
             <section className="hero-section">
                 <div className="hero-overlay">
-                    <h1>Welcome to London</h1>
-                    <p>Experience the vibrant heart of the UK with our exclusive packages.</p>
+                    <h1>LONDON ONBOARDING</h1>
+                    <p>To be the go-to support network for students in London, making every aspect of their journey—from landing to living—simple, stress-free, and welcoming.</p>
                 </div>
             </section>
-
 
             {/* Packages Section */}
             <Packages onBook={handleBook} />
@@ -34,54 +35,40 @@ const Booking = () => {
                     />
                 </div>
             )}
-            {/* Introduction Section */}
-            <section className="introduction-section">
-                <h2>Welcome to London!</h2>
-                <p>Discover the vibrant city of London, a melting pot of culture, history, and modernity. Whether you're here for business, study, or leisure, London's diverse neighborhoods and rich history offer something for everyone.</p>
-            </section>
 
-            {/* Landing and Transportation Section */}
-            <section className="transportation-section">
-                <h3>Arriving in London</h3>
-                <p>From Heathrow to Gatwick, arriving in London is just the beginning of your adventure. Here’s how to navigate the city’s airports and get into the city smoothly.</p>
-                <ul>
-                    <li><strong>Heathrow Express: </strong> The fastest way to reach Central London from Heathrow.</li>
-                    <li><strong>London Underground: </strong> Affordable and convenient, with connections to all major parts of the city.</li>
-                    <li><strong>Taxi & Ride Shares: </strong> Available 24/7 from all major airports.</li>
-                </ul>
-            </section>
-
-            {/* Accommodation Guide Section */}
-            <section className="accommodation-section">
-                <h3>Where to Stay</h3>
-                <p>London offers a wide range of accommodation options. Here are some of the most popular areas to stay:</p>
-                <ul>
-                    <li><strong>Central London: </strong>Ideal for sightseeing with close proximity to landmarks.</li>
-                    <li><strong>Shoreditch: </strong> Perfect for those who enjoy vibrant nightlife and trendy spots.</li>
-                    <li><strong>Kensington: </strong> A luxurious area known for its museums and parks.</li>
-                </ul>
-            </section>
-
-            {/* Must-Visit Attractions Section */}
-            <section className="attractions-section">
-                <h3>Top Attractions</h3>
-                <p>Make the most of your time in London by visiting these must-see attractions:</p>
-                <ul>
-                    <li><strong>The British Museum:</strong> Explore centuries of history and culture.</li>
-                    <li><strong>The London Eye:</strong> Get a bird's eye view of the city from this iconic Ferris wheel.</li>
-                    <li><strong>Hyde Park:</strong> Enjoy a relaxing stroll in one of London's largest parks.</li>
-                </ul>
-            </section>
-
-            {/* Practical Information Section */}
-            <section className="practical-info-section">
-                <h3>Practical Information</h3>
-                <p>Here are some tips to help you get settled in London:</p>
-                <ul>
-                    <li><strong>SIM Cards:</strong> Purchase a local SIM card for data and calls.</li>
-                    <li><strong>Currency Exchange:</strong> Exchange your currency at competitive rates.</li>
-                    <li><strong>Emergency Numbers:</strong> Dial 999 for emergencies.</li>
-                </ul>
+            {/* Our Team Section */}
+            <section className="team-section">
+                <h2>Our Team</h2>
+                <div className="team-container">
+                    <div className="team-member-card">
+                        <img src={batoulImage} alt="Batoul Noureddine" className="team-image" />
+                        <div className="team-member-info">
+                            <h3>Batoul Noureddine</h3>
+                            <p>🌍 Lebanese</p>
+                            <p>🏫 Studying at Imperial College London</p>
+                            <p>⚡ MSc in Sustainable Energy Futures</p>
+                            <p>🏆 Recipient of two scholarships to study in the UK</p>
+                            <p>🏡 1 year living experience in 4 different locations in the UK</p>
+                            <p>🚊 Travelled to 12 different cities and towns in the UK</p>
+                            <p>🔐 Knows all tricks and tips to navigate London smoothly, smartly, and cost-effectively</p>
+                            <p>🌍 "With experience traveling to 14+ countries and meeting 60+ nationalities, I effortlessly blend with any culture."</p>
+                        </div>
+                    </div>
+                    <div className="team-member-card">
+                        <img src={azeemImage} alt="Azeem Armaghan" className="team-image" />
+                        <div className="team-member-info">
+                            <h3>Azeem Armaghan</h3>
+                            <p>🎓 Completed LLB (Final Year) from the University of London in 2017.</p>
+                            <p>📚 Successfully pursued Bar at Law from BPP London (2020-2021) and was called to the Bar of England and Wales by the Honourable Society of Lincoln’s Inn.</p>
+                            <p>🎓 Recently earned an LLM from Queen Mary University of London.</p>
+                            <p>🏙️ London has been my second home for the past five years, giving me deep insights into the city's student life.</p>
+                            <p>⚖️ Interned in the legal field, gaining valuable experience in the heart of London’s legal community.</p>
+                            <p>🌍 Originally from Pakistan, I bring a diverse cultural perspective and understand the unique challenges international students face.</p>
+                            <p>💈 Your go-to guide for navigating life in London—whether it's finding the best-value barbers, reliable dry cleaners, or the most cost-effective gym memberships.</p>
+                            <p>🗣️ Passionate about helping fellow students make the most of their London experience with practical tips and personalized advice.</p>
+                        </div>
+                    </div>
+                </div>
             </section>
         </div>
     );
