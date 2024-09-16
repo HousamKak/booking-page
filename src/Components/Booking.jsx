@@ -1,18 +1,29 @@
 import React, { useState } from 'react';
 import Packages from '../Packages/Packages';
 import CalendlyWidget from './CalendlyWidget';
+import Modal from './Modal'; // Importing Modal component
 import './Booking.css';
 import batoulIm from '../media/batoul_2.jpg'; // Importing the image
 import batoulImage from '../media/batoul.jpg'; // Importing the image
 import azeemImage from '../media/azeem.jpg';  // Importing the image
 
 const Booking = () => {
-    const [packageSelected, setPackageSelected] = useState(null);
     const [calendlyActive, setCalendlyActive] = useState(false);
+    const [calendlyUrl, setCalendlyUrl] = useState('');
 
+    // Handle package selection and set the correct Calendly URL
     const handleBook = (selectedPackage) => {
-        setPackageSelected(selectedPackage);
-        setCalendlyActive(true);
+        const calendlyUrls = {
+            gold: "https://calendly.com/d/ckxc-frh-tmm/airport-pickup-gold-package",
+            platinum: "https://calendly.com/d/cpjk-68v-tsf/airport-pickup-platinum-package"
+        };
+
+        setCalendlyUrl(calendlyUrls[selectedPackage]); // Set the selected Calendly URL
+        setCalendlyActive(true); // Open the modal
+    };
+
+    const closeModal = () => {
+        setCalendlyActive(false);
     };
 
     const scrollToPackages = () => {
@@ -31,16 +42,13 @@ const Booking = () => {
 
             {/* Packages Section */}
             <section id="packages-section">
-                <Packages onBook={handleBook} />
+                <Packages onBook={handleBook} /> {/* Passing handleBook to open the modal from the packages */}
             </section>
 
             {calendlyActive && (
-                <div className="calendly-section">
-                    <CalendlyWidget
-                        url="https://calendly.com/housam-kak/housam-test"
-                        active={calendlyActive}
-                    />
-                </div>
+                <Modal onClose={closeModal}>
+                    <CalendlyWidget url={calendlyUrl} active={calendlyActive} />
+                </Modal>
             )}
 
             {/* Our Team Section */}
@@ -78,8 +86,8 @@ const Booking = () => {
                 </div>
             </section>
 
-               {/* Quote Section */}
-               <section className="quote-section">
+            {/* Quote Section */}
+            <section className="quote-section">
                 <div className="quote-container">
                     <img src={batoulIm} alt="Batoul Noureddine" className="quote-image" />
                     <div className="quote-text">
@@ -88,13 +96,19 @@ const Booking = () => {
                 </div>
             </section>
 
-
             {/* Catchy Phrase and Book Now Button Section */}
             <section className="book-now-section">
                 <div className="catchy-phrase">
                     <h2>Make Your London a Swift Transition</h2>
                 </div>
-                <button className="book-now-btn" onClick={scrollToPackages}>Book Us Now</button>
+                <div className="button-container">
+                    <button className="book-now-btn" onClick={scrollToPackages}>Book Us Now</button>
+                    <a href="https://wa.me/message/G4RMGCJXZK2ZH1" target="_blank" rel="noopener noreferrer" className="whatsapp-link">
+                        <button className="whatsapp-btn">
+                            <i className="fa fa-whatsapp"></i> Contact Us
+                        </button>
+                    </a>
+                </div>
             </section>
 
             {/* Footer Section */}

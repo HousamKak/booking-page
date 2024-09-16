@@ -10,15 +10,8 @@ import ListItemDecorator from '@mui/joy/ListItemDecorator';
 import Typography from '@mui/joy/Typography';
 import Check from '@mui/icons-material/Check';
 import KeyboardArrowRight from '@mui/icons-material/KeyboardArrowRight';
-import { useNavigate } from 'react-router-dom';
 
 export default function PricingCard({ title, chipLabel, content, price, buttonLabel, buttonAction, cardColor, chipColor }) {
-    const navigate = useNavigate();
-
-    const handleButtonClick = () => {
-        buttonAction(); // Execute any additional logic passed via props
-        navigate(`/calendly/${chipLabel.toLowerCase()}`); // Redirect to the Calendly page
-    };
 
     return (
         <Card
@@ -62,7 +55,7 @@ export default function PricingCard({ title, chipLabel, content, price, buttonLa
                     variant="soft"
                     color="neutral"
                     endDecorator={<KeyboardArrowRight />}
-                    onClick={handleButtonClick}
+                    onClick={buttonAction}  
                 >
                     {buttonLabel}
                 </Button>
