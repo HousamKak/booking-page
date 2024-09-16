@@ -6,6 +6,8 @@ import './Booking.css';
 import batoulIm from '../media/batoul_2.jpg'; // Importing the image
 import batoulImage from '../media/batoul.jpg'; // Importing the image
 import azeemImage from '../media/azeem.jpg';  // Importing the image
+import '@fortawesome/fontawesome-free/css/all.min.css';
+
 
 const Booking = () => {
     const [calendlyActive, setCalendlyActive] = useState(false);
@@ -105,7 +107,7 @@ const Booking = () => {
                     <button className="book-now-btn" onClick={scrollToPackages}>Book Us Now</button>
                     <a href="https://wa.me/message/G4RMGCJXZK2ZH1" target="_blank" rel="noopener noreferrer" className="whatsapp-link">
                         <button className="whatsapp-btn">
-                            <i className="fa fa-whatsapp"></i> Contact Us
+                           Contact Us
                         </button>
                     </a>
                 </div>
@@ -115,7 +117,7 @@ const Booking = () => {
             <footer className="footer">
                 <div className="footer-content">
                     <p className="footer-rights">© 2024 All Rights Reserved</p>
-                    <p className="footer-phone">📞 +447704636626</p>
+                    <p className="footer-phone"><i className="fab fa-whatsapp"></i> +447704636626 </p>
                     <p className="footer-team">The London Onboarding Team</p>
                 </div>
             </footer>

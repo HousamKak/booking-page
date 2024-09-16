@@ -431,8 +431,18 @@
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Add shadow */
 }
 
+.book-now-btn i,
 .whatsapp-btn i {
-    margin-right: 10px; /* Space between icon and text */
+    margin-right: 10px; /* Space between the icon and text */
+}
+
+/* Ensure the icon appears inside the button */
+.book-now-btn .fa-phone-alt {
+    font-size: 1.2rem;
+}
+
+.whatsapp-btn .fa-whatsapp {
+    font-size: 1.5rem;
 }
 
 .whatsapp-btn:hover {
