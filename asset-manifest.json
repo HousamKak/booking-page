@@ -1,16 +1,18 @@
 {
   "files": {
-    "main.css": "/booking-page/static/css/main.252a59ca.css",
-    "main.js": "/booking-page/static/js/main.6bae489a.js",
+    "main.css": "/booking-page/static/css/main.93feb25f.css",
+    "main.js": "/booking-page/static/js/main.9a6381b9.js",
     "static/js/453.cb98b375.chunk.js": "/booking-page/static/js/453.cb98b375.chunk.js",
     "static/media/london.jpg": "/booking-page/static/media/london.aace96d5681400fa6ec5.jpg",
+    "static/media/batoul.jpg": "/booking-page/static/media/batoul.d00cb911b9ecbf28b752.jpg",
+    "static/media/azeem.jpg": "/booking-page/static/media/azeem.e26c1b5d56a9c6e3966a.jpg",
     "index.html": "/booking-page/index.html",
-    "main.252a59ca.css.map": "/booking-page/static/css/main.252a59ca.css.map",
-    "main.6bae489a.js.map": "/booking-page/static/js/main.6bae489a.js.map",
+    "main.93feb25f.css.map": "/booking-page/static/css/main.93feb25f.css.map",
+    "main.9a6381b9.js.map": "/booking-page/static/js/main.9a6381b9.js.map",
     "453.cb98b375.chunk.js.map": "/booking-page/static/js/453.cb98b375.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.252a59ca.css",
-    "static/js/main.6bae489a.js"
+    "static/css/main.93feb25f.css",
+    "static/js/main.9a6381b9.js"
   ]
 }
