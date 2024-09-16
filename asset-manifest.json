@@ -1,19 +1,27 @@
 {
   "files": {
-    "main.css": "/booking-page/static/css/main.0f4b934f.css",
-    "main.js": "/booking-page/static/js/main.0165766c.js",
+    "main.css": "/booking-page/static/css/main.69a62bb1.css",
+    "main.js": "/booking-page/static/js/main.ba1b771a.js",
     "static/js/453.cb98b375.chunk.js": "/booking-page/static/js/453.cb98b375.chunk.js",
-    "static/media/batoul.jpg": "/booking-page/static/media/batoul.2b3aabe2b21d2234942a.jpg",
+    "static/media/batoul.jpg": "/booking-page/static/media/batoul.c1dccea031d344ea3673.jpg",
+    "static/media/fa-solid-900.ttf": "/booking-page/static/media/fa-solid-900.07ed6d5fa32c1d54af0f.ttf",
     "static/media/london.jpg": "/booking-page/static/media/london.aace96d5681400fa6ec5.jpg",
     "static/media/batoul_2.jpg": "/booking-page/static/media/batoul_2.d00cb911b9ecbf28b752.jpg",
+    "static/media/fa-brands-400.ttf": "/booking-page/static/media/fa-brands-400.0ff70dcbf135d859ebf3.ttf",
+    "static/media/fa-solid-900.woff2": "/booking-page/static/media/fa-solid-900.93f719f4d62bfa3e748c.woff2",
+    "static/media/fa-brands-400.woff2": "/booking-page/static/media/fa-brands-400.bb8d5a145e22822103fb.woff2",
     "static/media/azeem.jpg": "/booking-page/static/media/azeem.e26c1b5d56a9c6e3966a.jpg",
+    "static/media/fa-regular-400.ttf": "/booking-page/static/media/fa-regular-400.17a6e1aebccdbaa39e78.ttf",
+    "static/media/fa-regular-400.woff2": "/booking-page/static/media/fa-regular-400.bc3722686635b5f86132.woff2",
+    "static/media/fa-v4compatibility.ttf": "/booking-page/static/media/fa-v4compatibility.0f6cb412603527bda691.ttf",
+    "static/media/fa-v4compatibility.woff2": "/booking-page/static/media/fa-v4compatibility.6cfec8414be20e2c3426.woff2",
     "index.html": "/booking-page/index.html",
-    "main.0f4b934f.css.map": "/booking-page/static/css/main.0f4b934f.css.map",
-    "main.0165766c.js.map": "/booking-page/static/js/main.0165766c.js.map",
+    "main.69a62bb1.css.map": "/booking-page/static/css/main.69a62bb1.css.map",
+    "main.ba1b771a.js.map": "/booking-page/static/js/main.ba1b771a.js.map",
     "453.cb98b375.chunk.js.map": "/booking-page/static/js/453.cb98b375.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.0f4b934f.css",
-    "static/js/main.0165766c.js"
+    "static/css/main.69a62bb1.css",
+    "static/js/main.ba1b771a.js"
   ]
 }
